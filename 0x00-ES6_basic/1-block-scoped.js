@@ -1,8 +1,11 @@
 /* var and hoisting, modify the variables */
 
+let task;
+let task2;
+
 export default function taskBlock(trueOrFalse) {
-  let task = false;
-  let task2 = true;
+  task = false;
+  task2 = true;
 
   if (trueOrFalse) {
     task = true;
