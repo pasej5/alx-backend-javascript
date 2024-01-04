@@ -1,5 +1,4 @@
-/* simulating an asynchronous API call that retuens a promise */
-
+/* eslint-disable */
 export default function getResponseFromAPI() {
   return new Promise((resolve, reject) => {});
 }
