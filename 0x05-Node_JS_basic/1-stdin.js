@@ -10,7 +10,7 @@ const { stdout, stdin } = process;
 stdout.write('Welcome to Holberton School, what is your name?\n');
 
 stdin.setEncoding('utf-8');
-stdin.on('readable', () => {
+stdin.on('data', (data) => {
   const name = stdin.read();
   stdout.write(`Your name is: ${name}`);
   process.exit();
