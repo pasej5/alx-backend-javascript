@@ -1,8 +1,8 @@
 /**
- * using Process stdin
- * this will prompt a user to enbter a username
- * then displays it on the console
- * notifies the user when leaving
+ * Interactive script to print user's name
+ *  - Prompts user to enter user name (stdin)
+ *  - Display entered user name (stdout)
+ *  - Notifies user when exiting (exit)
  */
 
 const { stdout, stdin } = process;
@@ -10,7 +10,7 @@ const { stdout, stdin } = process;
 stdout.write('Welcome to Holberton School, what is your name?\n');
 
 stdin.setEncoding('utf-8');
-stdin.on('data', (data) => {
+stdin.on('readable', () => {
   const name = stdin.read();
   stdout.write(`Your name is: ${name}`);
   process.exit();
