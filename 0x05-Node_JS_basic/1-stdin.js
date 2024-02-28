@@ -9,13 +9,8 @@ const { stdout, stdin } = process;
 
 stdout.write('Welcome to Holberton School, what is your name?\n');
 
-stdin.setEncoding('utf-8');
-stdin.on('data', (data) => {
-  const name = data.trim();
+stdin.once('data', (data) => {
+  const name = data.toString().trim();
   stdout.write(`Your name is: ${name}\n`);
-  process.exit();
-});
-
-process.on('exit', () => {
-  stdout.write('This important software is now closing\n');
+  process.stdout.write('This important software is now closing\n');
 });
