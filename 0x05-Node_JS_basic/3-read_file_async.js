@@ -30,7 +30,7 @@ function countStudents(dbPath) {
           console.log(
             `Number of students in ${course}: ${
               courseStudents.length
-            }. List: ${courseStudents.join(', ')}`
+            }. List: ${courseStudents.join(', ')}`,
           );
         });
         resolve();

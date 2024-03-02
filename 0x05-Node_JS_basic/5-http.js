@@ -44,7 +44,7 @@ const app = http.createServer((req, resp) => {
           body.push(
             `Number of students in ${course}: ${
               courseStudents.length
-            }. List: ${courseStudents.join(', ')}`
+            }. List: ${courseStudents.join(', ')}`,
           );
         });
       }

@@ -1,0 +1,16 @@
+{
+  "name": "0x05-node_js_basic",
+  "version": "1.0.0",
+  "description": "## Resources",
+  "main": "0-console.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

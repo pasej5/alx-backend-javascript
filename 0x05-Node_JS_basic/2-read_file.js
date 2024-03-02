@@ -31,7 +31,7 @@ function countStudents(dbPath) {
       console.log(
         `Number of students in ${course}: ${
           courseData.count
-        }. List: ${courseData.students.join(', ')}`
+        }. List: ${courseData.students.join(', ')}`,
       );
     });
   } catch (error) {
