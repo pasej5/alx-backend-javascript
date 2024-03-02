@@ -1,0 +1,16 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "In JavaScript, unit testing is a crucial practice in software development that involves testing individual units or components of your code in isolation to ensure they work as expected. There are several tools and libraries available for performing unit tests in JavaScript, with some of the most popular being:",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha *.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0",
+    "sinon": "^15.2.0"
+  }
+}
